@@ -1,0 +1,4971 @@
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+125.25.115.93 : user last sync is 2015-03-15 21:03:35
+125.25.115.93 : request from device 68210d41de554303b81a83817762b2e4
+125.25.115.93 : retrive user data [{"1":[1,2,4,6]},{"7":[4,5,6,7,8,9]}]
+125.25.115.93 : send change is '1:1:5:0:10001|2:7:5:0:10002'
+125.25.115.93 : parse change array (
+  0 => '1',
+  1 => '1',
+  2 => '5',
+  3 => '0',
+  4 => '10001',
+)
+125.25.115.93 : parse change array (
+  0 => '2',
+  1 => '7',
+  2 => '5',
+  3 => '0',
+  4 => '10002',
+)
+125.25.115.93 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=22 AND `device_id`!="68210d41de554303b81a83817762b2e4" AND `updatetime`>="2015-03-15 21:03:35" ORDER BY `unixtime` ASC
+125.25.115.93 : select change activity 0 rows
+125.25.115.93 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '1',
+   'volumeid' => '5',
+   'deviceid' => '68210d41de554303b81a83817762b2e4',
+   'volumenum' => '0',
+   'updatetime' => '10001',
+))
+125.25.115.93 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '7',
+   'volumeid' => '5',
+   'deviceid' => '68210d41de554303b81a83817762b2e4',
+   'volumenum' => '0',
+   'updatetime' => '10002',
+))
+125.25.115.93 : merge change
+125.25.115.93 : insert data to change activity
+125.25.115.93 : oldest sync is from 018a5b6917b1de46ed80354a06992b8b
+125.25.115.93 : return change is array (
+)
+125.25.115.93 : save data to db [{1:[1,2,4,6,5]},{7:[4,6,7,8,9]}]
+125.25.115.93 : return last sync is 2015-03-15 21:03:35
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+125.25.115.93 : user last sync is 2015-03-15 21:03:35
+125.25.115.93 : request from device 018a5b6917b1de46ed80354a06992b8b
+125.25.115.93 : retrive user data [{"1":[1,2,4,6,5]},{"7":[4,6,7,8,9]}]
+125.25.115.93 : send change is '1:15:0:17:10009|2:15:2:0:10010|2:15:1:0:10013'
+125.25.115.93 : parse change array (
+  0 => '1',
+  1 => '15',
+  2 => '0',
+  3 => '17',
+  4 => '10009',
+)
+125.25.115.93 : parse change array (
+  0 => '2',
+  1 => '15',
+  2 => '2',
+  3 => '0',
+  4 => '10010',
+)
+125.25.115.93 : parse change array (
+  0 => '2',
+  1 => '15',
+  2 => '1',
+  3 => '0',
+  4 => '10013',
+)
+125.25.115.93 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=22 AND `device_id`!="018a5b6917b1de46ed80354a06992b8b" AND `updatetime`>="2015-03-15 21:03:35" ORDER BY `unixtime` ASC
+125.25.115.93 : select change activity 2 rows
+125.25.115.93 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '1',
+   'volumeid' => '5',
+   'deviceid' => '68210d41de554303b81a83817762b2e4',
+   'volumenum' => '0',
+   'updatetime' => '10001',
+))
+125.25.115.93 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '7',
+   'volumeid' => '5',
+   'deviceid' => '68210d41de554303b81a83817762b2e4',
+   'volumenum' => '0',
+   'updatetime' => '10002',
+))
+125.25.115.93 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '15',
+   'volumeid' => '2',
+   'deviceid' => '018a5b6917b1de46ed80354a06992b8b',
+   'volumenum' => '0',
+   'updatetime' => '10010',
+))
+125.25.115.93 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '15',
+   'volumeid' => '1',
+   'deviceid' => '018a5b6917b1de46ed80354a06992b8b',
+   'volumenum' => '0',
+   'updatetime' => '10013',
+))
+125.25.115.93 : merge change
+125.25.115.93 : insert data to change activity
+125.25.115.93 : oldest sync is from 68210d41de554303b81a83817762b2e4
+125.25.115.93 : return change is array (
+  0 => 
+  array (
+    't' => '1',
+    'bid' => '1',
+    'vid' => '5',
+  ),
+  1 => 
+  array (
+    't' => '2',
+    'bid' => '7',
+    'vid' => '5',
+  ),
+)
+125.25.115.93 : save data to db [{1:[1,2,4,6,5]},{7:[4,6,7,8,9]},{15:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]}]
+125.25.115.93 : return last sync is 2015-03-15 21:03:35
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+125.25.115.93 : user last sync is 2015-03-15 21:03:35
+125.25.115.93 : request from device 018a5b6917b1de46ed80354a06992b8b
+125.25.115.93 : retrive user data [{"1":[1,2,4,6,5]},{"7":[4,6,7,8,9]},{"15":[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]}]
+125.25.115.93 : send change is '1:44:3:0:10020|1:44:4:0:10020|2:15:0:17:10021'
+125.25.115.93 : parse change array (
+  0 => '1',
+  1 => '44',
+  2 => '3',
+  3 => '0',
+  4 => '10020',
+)
+125.25.115.93 : parse change array (
+  0 => '1',
+  1 => '44',
+  2 => '4',
+  3 => '0',
+  4 => '10020',
+)
+125.25.115.93 : parse change array (
+  0 => '2',
+  1 => '15',
+  2 => '0',
+  3 => '17',
+  4 => '10021',
+)
+125.25.115.93 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=22 AND `device_id`!="018a5b6917b1de46ed80354a06992b8b" AND `updatetime`>="2015-03-15 21:03:35" ORDER BY `unixtime` ASC
+125.25.115.93 : select change activity 0 rows
+125.25.115.93 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '44',
+   'volumeid' => '3',
+   'deviceid' => '018a5b6917b1de46ed80354a06992b8b',
+   'volumenum' => '0',
+   'updatetime' => '10020',
+))
+125.25.115.93 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '44',
+   'volumeid' => '4',
+   'deviceid' => '018a5b6917b1de46ed80354a06992b8b',
+   'volumenum' => '0',
+   'updatetime' => '10020',
+))
+125.25.115.93 : merge change
+125.25.115.93 : insert data to change activity
+125.25.115.93 : oldest sync is from 68210d41de554303b81a83817762b2e4
+125.25.115.93 : return change is array (
+)
+125.25.115.93 : save data to db [{1:[1,2,4,6,5]},{7:[4,6,7,8,9]},{44:[3,4]}]
+125.25.115.93 : return last sync is 2015-03-15 21:03:35
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+125.25.115.93 : user last sync is 2015-03-15 21:03:35
+125.25.115.93 : request from device 018a5b6917b1de46ed80354a06992b8b
+125.25.115.93 : retrive user data [{"1":[1,2,4,6,5]},{"7":[4,6,7,8,9]},{"44":[3,4]}]
+125.25.115.93 : send change is '1:6535:1:0:10030'
+125.25.115.93 : parse change array (
+  0 => '1',
+  1 => '6535',
+  2 => '1',
+  3 => '0',
+  4 => '10030',
+)
+125.25.115.93 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=22 AND `device_id`!="018a5b6917b1de46ed80354a06992b8b" AND `updatetime`>="2015-03-15 21:03:35" ORDER BY `unixtime` ASC
+125.25.115.93 : select change activity 0 rows
+125.25.115.93 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '6535',
+   'volumeid' => '1',
+   'deviceid' => '018a5b6917b1de46ed80354a06992b8b',
+   'volumenum' => '0',
+   'updatetime' => '10030',
+))
+125.25.115.93 : merge change
+125.25.115.93 : insert data to change activity
+125.25.115.93 : oldest sync is from 68210d41de554303b81a83817762b2e4
+125.25.115.93 : return change is array (
+)
+125.25.115.93 : save data to db [{1:[1,2,4,6,5]},{7:[4,6,7,8,9]},{44:[3,4]},{6535:[1]}]
+125.25.115.93 : return last sync is 2015-03-15 21:03:35
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+125.25.115.93 : user last sync is 2015-03-15 21:03:35
+125.25.115.93 : request from device 68210d41de554303b81a83817762b2e4
+125.25.115.93 : retrive user data [{"1":[1,2,4,6,5]},{"7":[4,6,7,8,9]},{"44":[3,4]},{"6535":[1]}]
+125.25.115.93 : send change is ''
+125.25.115.93 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=22 AND `device_id`!="68210d41de554303b81a83817762b2e4" AND `updatetime`>="2015-03-15 21:03:35" ORDER BY `unixtime` ASC
+125.25.115.93 : select change activity 7 rows
+125.25.115.93 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '15',
+   'volumeid' => '2',
+   'deviceid' => '018a5b6917b1de46ed80354a06992b8b',
+   'volumenum' => '0',
+   'updatetime' => '10010',
+))
+125.25.115.93 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '15',
+   'volumeid' => '1',
+   'deviceid' => '018a5b6917b1de46ed80354a06992b8b',
+   'volumenum' => '0',
+   'updatetime' => '10013',
+))
+125.25.115.93 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '44',
+   'volumeid' => '4',
+   'deviceid' => '018a5b6917b1de46ed80354a06992b8b',
+   'volumenum' => '0',
+   'updatetime' => '10020',
+))
+125.25.115.93 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '44',
+   'volumeid' => '3',
+   'deviceid' => '018a5b6917b1de46ed80354a06992b8b',
+   'volumenum' => '0',
+   'updatetime' => '10020',
+))
+125.25.115.93 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '6535',
+   'volumeid' => '1',
+   'deviceid' => '018a5b6917b1de46ed80354a06992b8b',
+   'volumenum' => '0',
+   'updatetime' => '10030',
+))
+125.25.115.93 : merge change
+125.25.115.93 : insert data to change activity
+125.25.115.93 : oldest sync is from 018a5b6917b1de46ed80354a06992b8b
+125.25.115.93 : return change is array (
+  0 => 
+  array (
+    't' => '1',
+    'bid' => '44',
+    'vid' => '4',
+  ),
+  1 => 
+  array (
+    't' => '1',
+    'bid' => '44',
+    'vid' => '3',
+  ),
+  2 => 
+  array (
+    't' => '1',
+    'bid' => '6535',
+    'vid' => '1',
+  ),
+  3 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '2',
+  ),
+  4 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '1',
+  ),
+  5 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '3',
+  ),
+  6 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '4',
+  ),
+  7 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '5',
+  ),
+  8 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '6',
+  ),
+  9 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '7',
+  ),
+  10 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '8',
+  ),
+  11 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '9',
+  ),
+  12 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '10',
+  ),
+  13 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '11',
+  ),
+  14 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '12',
+  ),
+  15 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '13',
+  ),
+  16 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '14',
+  ),
+  17 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '15',
+  ),
+  18 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '16',
+  ),
+  19 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '17',
+  ),
+)
+125.25.115.93 : save data to db [{1:[1,2,4,6,5]},{7:[4,6,7,8,9]},{44:[3,4]},{6535:[1]}]
+125.25.115.93 : return last sync is 2015-03-15 21:03:35
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+125.25.115.93 : user last sync is 2015-03-15 21:03:35
+125.25.115.93 : request from device 68210d41de554303b81a83817762b2e4
+125.25.115.93 : retrive user data [{"1":[1,2,4,6,5]},{"7":[4,6,7,8,9]},{"44":[3,4]},{"6535":[1]}]
+125.25.115.93 : send change is ''
+125.25.115.93 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=22 AND `device_id`!="68210d41de554303b81a83817762b2e4" AND `updatetime`>="2015-03-15 21:03:35" ORDER BY `unixtime` ASC
+125.25.115.93 : select change activity 0 rows
+125.25.115.93 : merge change
+125.25.115.93 : insert data to change activity
+125.25.115.93 : oldest sync is from 018a5b6917b1de46ed80354a06992b8b
+125.25.115.93 : return change is array (
+)
+125.25.115.93 : save data to db [{1:[1,2,4,6,5]},{7:[4,6,7,8,9]},{44:[3,4]},{6535:[1]}]
+125.25.115.93 : return last sync is 2015-03-15 21:03:35
+=======================================================
+------------------ MERGE DATA SERVICE -----------------
+=======================================================
+user push json is array (
+  0 => 
+  array (
+    1 => 
+    array (
+      0 => 1,
+      1 => 2,
+    ),
+  ),
+  1 => 
+  array (
+    7 => 
+    array (
+      0 => 4,
+      1 => 6,
+    ),
+  ),
+)
+user db json is array (
+  0 => 
+  array (
+    1 => 
+    array (
+      0 => 1,
+      1 => 3,
+    ),
+  ),
+  1 => 
+  array (
+    3866 => 
+    array (
+      0 => 10,
+    ),
+  ),
+)
+service return is array (
+  0 => 
+  array (
+    'bid' => 1,
+    'vol' => 
+    array (
+      0 => '1',
+      1 => '3',
+    ),
+  ),
+  1 => 
+  array (
+    'bid' => 3866,
+    'vol' => 
+    array (
+      0 => '10',
+    ),
+  ),
+)
+merged data is '[{1:[1,3,2]},{3866:[10]},{7:[4,6]}]'
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+125.25.115.93 : user last sync is 2015-03-15 21:06:02
+125.25.115.93 : request from device 68210d41de554303b81a83817762b2e4
+125.25.115.93 : retrive user data [{"1":[1,2,4,6]},{"7":[4,5,6,7,8,9]}]
+125.25.115.93 : send change is '1:1:5:0:10001|2:7:5:0:10002'
+125.25.115.93 : parse change array (
+  0 => '1',
+  1 => '1',
+  2 => '5',
+  3 => '0',
+  4 => '10001',
+)
+125.25.115.93 : parse change array (
+  0 => '2',
+  1 => '7',
+  2 => '5',
+  3 => '0',
+  4 => '10002',
+)
+125.25.115.93 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=22 AND `device_id`!="68210d41de554303b81a83817762b2e4" AND `updatetime`>="2015-03-15 21:06:02" ORDER BY `unixtime` ASC
+125.25.115.93 : select change activity 0 rows
+125.25.115.93 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '1',
+   'volumeid' => '5',
+   'deviceid' => '68210d41de554303b81a83817762b2e4',
+   'volumenum' => '0',
+   'updatetime' => '10001',
+))
+125.25.115.93 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '7',
+   'volumeid' => '5',
+   'deviceid' => '68210d41de554303b81a83817762b2e4',
+   'volumenum' => '0',
+   'updatetime' => '10002',
+))
+125.25.115.93 : merge change
+125.25.115.93 : insert data to change activity
+125.25.115.93 : oldest sync is from 018a5b6917b1de46ed80354a06992b8b
+125.25.115.93 : return change is array (
+)
+125.25.115.93 : save data to db [{1:[1,2,4,6,5]},{7:[4,6,7,8,9]}]
+125.25.115.93 : return last sync is 2015-03-15 21:06:02
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+125.25.115.93 : user last sync is 2015-03-15 21:06:02
+125.25.115.93 : request from device 018a5b6917b1de46ed80354a06992b8b
+125.25.115.93 : retrive user data [{"1":[1,2,4,6,5]},{"7":[4,6,7,8,9]}]
+125.25.115.93 : send change is '1:15:0:17:10009|2:15:2:0:10010|2:15:1:0:10013'
+125.25.115.93 : parse change array (
+  0 => '1',
+  1 => '15',
+  2 => '0',
+  3 => '17',
+  4 => '10009',
+)
+125.25.115.93 : parse change array (
+  0 => '2',
+  1 => '15',
+  2 => '2',
+  3 => '0',
+  4 => '10010',
+)
+125.25.115.93 : parse change array (
+  0 => '2',
+  1 => '15',
+  2 => '1',
+  3 => '0',
+  4 => '10013',
+)
+125.25.115.93 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=22 AND `device_id`!="018a5b6917b1de46ed80354a06992b8b" AND `updatetime`>="2015-03-15 21:06:02" ORDER BY `unixtime` ASC
+125.25.115.93 : select change activity 2 rows
+125.25.115.93 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '1',
+   'volumeid' => '5',
+   'deviceid' => '68210d41de554303b81a83817762b2e4',
+   'volumenum' => '0',
+   'updatetime' => '10001',
+))
+125.25.115.93 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '7',
+   'volumeid' => '5',
+   'deviceid' => '68210d41de554303b81a83817762b2e4',
+   'volumenum' => '0',
+   'updatetime' => '10002',
+))
+125.25.115.93 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '15',
+   'volumeid' => '2',
+   'deviceid' => '018a5b6917b1de46ed80354a06992b8b',
+   'volumenum' => '0',
+   'updatetime' => '10010',
+))
+125.25.115.93 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '15',
+   'volumeid' => '1',
+   'deviceid' => '018a5b6917b1de46ed80354a06992b8b',
+   'volumenum' => '0',
+   'updatetime' => '10013',
+))
+125.25.115.93 : merge change
+125.25.115.93 : insert data to change activity
+125.25.115.93 : oldest sync is from 68210d41de554303b81a83817762b2e4
+125.25.115.93 : return change is array (
+  0 => 
+  array (
+    't' => '1',
+    'bid' => '1',
+    'vid' => '5',
+  ),
+  1 => 
+  array (
+    't' => '2',
+    'bid' => '7',
+    'vid' => '5',
+  ),
+)
+125.25.115.93 : save data to db [{1:[1,2,4,6,5]},{7:[4,6,7,8,9]},{15:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]}]
+125.25.115.93 : return last sync is 2015-03-15 21:06:02
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+125.25.115.93 : user last sync is 2015-03-15 21:06:02
+125.25.115.93 : request from device 018a5b6917b1de46ed80354a06992b8b
+125.25.115.93 : retrive user data [{"1":[1,2,4,6,5]},{"7":[4,6,7,8,9]},{"15":[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]}]
+125.25.115.93 : send change is '1:44:3:0:10020|1:44:4:0:10020|2:15:0:17:10021'
+125.25.115.93 : parse change array (
+  0 => '1',
+  1 => '44',
+  2 => '3',
+  3 => '0',
+  4 => '10020',
+)
+125.25.115.93 : parse change array (
+  0 => '1',
+  1 => '44',
+  2 => '4',
+  3 => '0',
+  4 => '10020',
+)
+125.25.115.93 : parse change array (
+  0 => '2',
+  1 => '15',
+  2 => '0',
+  3 => '17',
+  4 => '10021',
+)
+125.25.115.93 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=22 AND `device_id`!="018a5b6917b1de46ed80354a06992b8b" AND `updatetime`>="2015-03-15 21:06:02" ORDER BY `unixtime` ASC
+125.25.115.93 : select change activity 0 rows
+125.25.115.93 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '44',
+   'volumeid' => '3',
+   'deviceid' => '018a5b6917b1de46ed80354a06992b8b',
+   'volumenum' => '0',
+   'updatetime' => '10020',
+))
+125.25.115.93 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '44',
+   'volumeid' => '4',
+   'deviceid' => '018a5b6917b1de46ed80354a06992b8b',
+   'volumenum' => '0',
+   'updatetime' => '10020',
+))
+125.25.115.93 : merge change
+125.25.115.93 : insert data to change activity
+125.25.115.93 : oldest sync is from 68210d41de554303b81a83817762b2e4
+125.25.115.93 : return change is array (
+)
+125.25.115.93 : save data to db [{1:[1,2,4,6,5]},{7:[4,6,7,8,9]},{44:[3,4]}]
+125.25.115.93 : return last sync is 2015-03-15 21:06:02
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+125.25.115.93 : user last sync is 2015-03-15 21:06:02
+125.25.115.93 : request from device 018a5b6917b1de46ed80354a06992b8b
+125.25.115.93 : retrive user data [{"1":[1,2,4,6,5]},{"7":[4,6,7,8,9]},{"44":[3,4]}]
+125.25.115.93 : send change is '1:6535:1:0:10030'
+125.25.115.93 : parse change array (
+  0 => '1',
+  1 => '6535',
+  2 => '1',
+  3 => '0',
+  4 => '10030',
+)
+125.25.115.93 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=22 AND `device_id`!="018a5b6917b1de46ed80354a06992b8b" AND `updatetime`>="2015-03-15 21:06:02" ORDER BY `unixtime` ASC
+125.25.115.93 : select change activity 0 rows
+125.25.115.93 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '6535',
+   'volumeid' => '1',
+   'deviceid' => '018a5b6917b1de46ed80354a06992b8b',
+   'volumenum' => '0',
+   'updatetime' => '10030',
+))
+125.25.115.93 : merge change
+125.25.115.93 : insert data to change activity
+125.25.115.93 : oldest sync is from 68210d41de554303b81a83817762b2e4
+125.25.115.93 : return change is array (
+)
+125.25.115.93 : save data to db [{1:[1,2,4,6,5]},{7:[4,6,7,8,9]},{44:[3,4]},{6535:[1]}]
+125.25.115.93 : return last sync is 2015-03-15 21:06:02
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+125.25.115.93 : user last sync is 2015-03-15 21:06:02
+125.25.115.93 : request from device 68210d41de554303b81a83817762b2e4
+125.25.115.93 : retrive user data [{"1":[1,2,4,6,5]},{"7":[4,6,7,8,9]},{"44":[3,4]},{"6535":[1]}]
+125.25.115.93 : send change is ''
+125.25.115.93 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=22 AND `device_id`!="68210d41de554303b81a83817762b2e4" AND `updatetime`>="2015-03-15 21:06:02" ORDER BY `unixtime` ASC
+125.25.115.93 : select change activity 7 rows
+125.25.115.93 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '15',
+   'volumeid' => '2',
+   'deviceid' => '018a5b6917b1de46ed80354a06992b8b',
+   'volumenum' => '0',
+   'updatetime' => '10010',
+))
+125.25.115.93 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '15',
+   'volumeid' => '1',
+   'deviceid' => '018a5b6917b1de46ed80354a06992b8b',
+   'volumenum' => '0',
+   'updatetime' => '10013',
+))
+125.25.115.93 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '44',
+   'volumeid' => '4',
+   'deviceid' => '018a5b6917b1de46ed80354a06992b8b',
+   'volumenum' => '0',
+   'updatetime' => '10020',
+))
+125.25.115.93 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '44',
+   'volumeid' => '3',
+   'deviceid' => '018a5b6917b1de46ed80354a06992b8b',
+   'volumenum' => '0',
+   'updatetime' => '10020',
+))
+125.25.115.93 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '6535',
+   'volumeid' => '1',
+   'deviceid' => '018a5b6917b1de46ed80354a06992b8b',
+   'volumenum' => '0',
+   'updatetime' => '10030',
+))
+125.25.115.93 : merge change
+125.25.115.93 : insert data to change activity
+125.25.115.93 : oldest sync is from 018a5b6917b1de46ed80354a06992b8b
+125.25.115.93 : return change is array (
+  0 => 
+  array (
+    't' => '1',
+    'bid' => '44',
+    'vid' => '4',
+  ),
+  1 => 
+  array (
+    't' => '1',
+    'bid' => '44',
+    'vid' => '3',
+  ),
+  2 => 
+  array (
+    't' => '1',
+    'bid' => '6535',
+    'vid' => '1',
+  ),
+  3 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '2',
+  ),
+  4 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '1',
+  ),
+  5 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '3',
+  ),
+  6 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '4',
+  ),
+  7 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '5',
+  ),
+  8 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '6',
+  ),
+  9 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '7',
+  ),
+  10 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '8',
+  ),
+  11 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '9',
+  ),
+  12 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '10',
+  ),
+  13 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '11',
+  ),
+  14 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '12',
+  ),
+  15 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '13',
+  ),
+  16 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '14',
+  ),
+  17 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '15',
+  ),
+  18 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '16',
+  ),
+  19 => 
+  array (
+    't' => '2',
+    'bid' => '15',
+    'vid' => '17',
+  ),
+)
+125.25.115.93 : save data to db [{1:[1,2,4,6,5]},{7:[4,6,7,8,9]},{44:[3,4]},{6535:[1]}]
+125.25.115.93 : return last sync is 2015-03-15 21:06:02
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+125.25.115.93 : user last sync is 2015-03-15 21:06:02
+125.25.115.93 : request from device 68210d41de554303b81a83817762b2e4
+125.25.115.93 : retrive user data [{"1":[1,2,4,6,5]},{"7":[4,6,7,8,9]},{"44":[3,4]},{"6535":[1]}]
+125.25.115.93 : send change is ''
+125.25.115.93 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=22 AND `device_id`!="68210d41de554303b81a83817762b2e4" AND `updatetime`>="2015-03-15 21:06:02" ORDER BY `unixtime` ASC
+125.25.115.93 : select change activity 0 rows
+125.25.115.93 : merge change
+125.25.115.93 : insert data to change activity
+125.25.115.93 : oldest sync is from 018a5b6917b1de46ed80354a06992b8b
+125.25.115.93 : return change is array (
+)
+125.25.115.93 : save data to db [{1:[1,2,4,6,5]},{7:[4,6,7,8,9]},{44:[3,4]},{6535:[1]}]
+125.25.115.93 : return last sync is 2015-03-15 21:06:02
+=======================================================
+------------------ MERGE DATA SERVICE -----------------
+=======================================================
+user push json is array (
+  0 => 
+  array (
+    1 => 
+    array (
+      0 => 1,
+      1 => 2,
+      2 => 4,
+    ),
+  ),
+  1 => 
+  array (
+    7 => 
+    array (
+      0 => 4,
+      1 => 6,
+    ),
+  ),
+  2 => 
+  array (
+    3866 => 
+    array (
+      0 => 2,
+    ),
+  ),
+)
+user db json is array (
+  0 => 
+  array (
+    1 => 
+    array (
+      0 => 1,
+      1 => 3,
+    ),
+  ),
+  1 => 
+  array (
+    3866 => 
+    array (
+      0 => 10,
+    ),
+  ),
+)
+service return is array (
+  0 => 
+  array (
+    'bid' => 1,
+    'vol' => 
+    array (
+      0 => '1',
+      1 => '3',
+    ),
+  ),
+  1 => 
+  array (
+    'bid' => 3866,
+    'vol' => 
+    array (
+      0 => '10',
+    ),
+  ),
+)
+merged data is '[{1:[1,3,2,4]},{3866:[10,2]},{7:[4,6]}]'
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 21:01:29
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"691":[1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 21:01:29" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 21:18:39
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 21:18:39
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"691":[1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 21:18:39" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 21:27:41
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 21:01:04
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"691":[1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 21:01:04" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 21:28:28
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 21:28:28
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"691":[1]}]
+101.109.225.61 : send change is '1:3196:1:0:1426429713.132885'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '3196',
+  2 => '1',
+  3 => '0',
+  4 => '1426429713.132885',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 21:28:28" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '3196',
+   'volumeid' => '1',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426429713.132885',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1]},{3196:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 21:28:32
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 21:27:41
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"691":[1]},{"3196":[1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 21:27:41" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 1 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '3196',
+   'volumeid' => '1',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426429713',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+  0 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '1',
+  ),
+)
+101.109.225.61 : save data to db [{691:[1]},{3196:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 21:28:45
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 21:00:10
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"691":[1]},{"3196":[1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 21:00:10" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 2 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '1',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426428065',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '3196',
+   'volumeid' => '1',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426429713',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+  0 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '1',
+  ),
+  1 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '1',
+  ),
+)
+101.109.225.61 : save data to db [{691:[1]},{3196:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 21:29:48
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 21:00:10
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"691":[1]},{"3196":[1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 21:00:10" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1]},{3196:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:03:29
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 21:00:10
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"691":[1]},{"3196":[1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 21:00:10" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1]},{3196:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:07:40
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:07:40
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"691":[1]},{"3196":[1]}]
+101.109.225.61 : send change is '1:3264:1:0:1426432069.177291'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '3264',
+  2 => '1',
+  3 => '0',
+  4 => '1426432069.177291',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:07:40" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '3264',
+   'volumeid' => '1',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432069.177291',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1]},{3196:[1]},{3264:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:07:47
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 21:28:45
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"691":[1]},{"3196":[1]},{"3264":[1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 21:28:45" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 1 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '3264',
+   'volumeid' => '1',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432069',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+  0 => 
+  array (
+    't' => '1',
+    'bid' => '3264',
+    'vid' => '1',
+  ),
+)
+101.109.225.61 : save data to db [{691:[1]},{3196:[1]},{3264:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:08:03
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 21:28:32
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"691":[1]},{"3196":[1]},{"3264":[1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 21:28:32" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 1 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '3264',
+   'volumeid' => '1',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432069',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+  0 => 
+  array (
+    't' => '1',
+    'bid' => '3264',
+    'vid' => '1',
+  ),
+)
+101.109.225.61 : save data to db [{691:[1]},{3196:[1]},{3264:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:09:40
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:09:40
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"691":[1]},{"3196":[1]},{"3264":[1]}]
+101.109.225.61 : send change is '1:691:0:6:1426432187.586125'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '691',
+  2 => '0',
+  3 => '6',
+  4 => '1426432187.586125',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:09:40" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3196:[1]},{3264:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:09:45
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:07:47
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3196":[1]},{"3264":[1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:07:47" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 1 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : return change is array (
+  0 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '1',
+  ),
+  1 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '2',
+  ),
+  2 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '3',
+  ),
+  3 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '4',
+  ),
+  4 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '5',
+  ),
+  5 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '6',
+  ),
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3196:[1]},{3264:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:10:00
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:10:00
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3196":[1]},{"3264":[1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:10:00" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3196:[1]},{3264:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:13:07
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:13:07
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3196":[1]},{"3264":[1]}]
+101.109.225.61 : send change is '1:3196:0:5:1426432392.801072'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '3196',
+  2 => '0',
+  3 => '5',
+  4 => '1426432392.801072',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:13:07" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3196:[1,2,3,4,5]},{3264:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:13:10
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:13:10
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3196":[1,2,3,4,5]},{"3264":[1]}]
+101.109.225.61 : send change is '2:3196:2:0:1426432397.887924'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '3196',
+  2 => '2',
+  3 => '0',
+  4 => '1426432397.887924',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:13:10" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '2',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432397.887924',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3196:[1,3,4,5]},{3264:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:13:15
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:13:15
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3196":[1,3,4,5]},{"3264":[1]}]
+101.109.225.61 : send change is '1:3196:0:5:1426432401.096510'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '3196',
+  2 => '0',
+  3 => '5',
+  4 => '1426432401.096510',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:13:15" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3196:[1,3,4,5,2]},{3264:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:13:19
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:13:19
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3196":[1,3,4,5,2]},{"3264":[1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:13:19" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3196:[1,3,4,5,2]},{3264:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:14:39
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:14:39
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3196":[1,3,4,5,2]},{"3264":[1]}]
+101.109.225.61 : send change is '1:3264:0:3:1426432484.861367'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '3264',
+  2 => '0',
+  3 => '3',
+  4 => '1426432484.861367',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:14:39" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3196:[1,3,4,5,2]},{3264:[1,2,3]}]
+101.109.225.61 : return last sync is 2015-03-15 22:14:42
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:08:03
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3196":[1,3,4,5,2]},{"3264":[1,2,3]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:08:03" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 5 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '2',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432398',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+  0 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '1',
+  ),
+  1 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '2',
+  ),
+  2 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '3',
+  ),
+  3 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '4',
+  ),
+  4 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '5',
+  ),
+  5 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '6',
+  ),
+  6 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '1',
+  ),
+  7 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '3',
+  ),
+  8 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '4',
+  ),
+  9 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '5',
+  ),
+  10 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '2',
+  ),
+  11 => 
+  array (
+    't' => '1',
+    'bid' => '3264',
+    'vid' => '1',
+  ),
+  12 => 
+  array (
+    't' => '1',
+    'bid' => '3264',
+    'vid' => '2',
+  ),
+  13 => 
+  array (
+    't' => '1',
+    'bid' => '3264',
+    'vid' => '3',
+  ),
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3196:[1,3,4,5,2]},{3264:[1,2,3]}]
+101.109.225.61 : return last sync is 2015-03-15 22:14:55
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:14:55
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3196":[1,3,4,5,2]},{"3264":[1,2,3]}]
+101.109.225.61 : send change is '1:2508:0:2:1426432507.872428'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '2508',
+  2 => '0',
+  3 => '2',
+  4 => '1426432507.872428',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:14:55" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3196:[1,3,4,5,2]},{3264:[1,2,3]},{2508:[1,2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:15:05
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:15:05
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3196":[1,3,4,5,2]},{"3264":[1,2,3]},{"2508":[1,2]}]
+101.109.225.61 : send change is '1:1943:0:1:1426432510.099140'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '1943',
+  2 => '0',
+  3 => '1',
+  4 => '1426432510.099140',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:15:05" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3196:[1,3,4,5,2]},{3264:[1,2,3]},{2508:[1,2]},{1943:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:15:08
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:09:45
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3196":[1,3,4,5,2]},{"3264":[1,2,3]},{"2508":[1,2]},{"1943":[1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:09:45" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 6 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '2',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432398',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+  0 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '1',
+  ),
+  1 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '3',
+  ),
+  2 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '4',
+  ),
+  3 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '5',
+  ),
+  4 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '2',
+  ),
+  5 => 
+  array (
+    't' => '1',
+    'bid' => '3264',
+    'vid' => '1',
+  ),
+  6 => 
+  array (
+    't' => '1',
+    'bid' => '3264',
+    'vid' => '2',
+  ),
+  7 => 
+  array (
+    't' => '1',
+    'bid' => '3264',
+    'vid' => '3',
+  ),
+  8 => 
+  array (
+    't' => '1',
+    'bid' => '2508',
+    'vid' => '1',
+  ),
+  9 => 
+  array (
+    't' => '1',
+    'bid' => '2508',
+    'vid' => '2',
+  ),
+  10 => 
+  array (
+    't' => '1',
+    'bid' => '1943',
+    'vid' => '1',
+  ),
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3196:[1,3,4,5,2]},{3264:[1,2,3]},{2508:[1,2]},{1943:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:15:23
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:14:42
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3196":[1,3,4,5,2]},{"3264":[1,2,3]},{"2508":[1,2]},{"1943":[1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:14:42" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 2 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : return change is array (
+  0 => 
+  array (
+    't' => '1',
+    'bid' => '2508',
+    'vid' => '1',
+  ),
+  1 => 
+  array (
+    't' => '1',
+    'bid' => '2508',
+    'vid' => '2',
+  ),
+  2 => 
+  array (
+    't' => '1',
+    'bid' => '1943',
+    'vid' => '1',
+  ),
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3196:[1,3,4,5,2]},{3264:[1,2,3]},{2508:[1,2]},{1943:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:15:48
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:15:48
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3196":[1,3,4,5,2]},{"3264":[1,2,3]},{"2508":[1,2]},{"1943":[1]}]
+101.109.225.61 : send change is '1:2424:0:2:1426432555.214180'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '2424',
+  2 => '0',
+  3 => '2',
+  4 => '1426432555.214180',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:15:48" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3196:[1,3,4,5,2]},{3264:[1,2,3]},{2508:[1,2]},{1943:[1]},{2424:[1,2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:15:53
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:15:53
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3196":[1,3,4,5,2]},{"3264":[1,2,3]},{"2508":[1,2]},{"1943":[1]},{"2424":[1,2]}]
+101.109.225.61 : send change is '2:2508:0:2:1426432559.038922'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '2508',
+  2 => '0',
+  3 => '2',
+  4 => '1426432559.038922',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:15:53" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3196:[1,3,4,5,2]},{3264:[1,2,3]},{1943:[1]},{2424:[1,2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:15:57
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:15:57
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3196":[1,3,4,5,2]},{"3264":[1,2,3]},{"1943":[1]},{"2424":[1,2]}]
+101.109.225.61 : send change is '2:3196:0:5:1426432562.273520'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '3196',
+  2 => '0',
+  3 => '5',
+  4 => '1426432562.273520',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:15:57" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3264:[1,2,3]},{1943:[1]},{2424:[1,2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:16:00
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:16:00
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3264":[1,2,3]},{"1943":[1]},{"2424":[1,2]}]
+101.109.225.61 : send change is '2:1943:0:1:1426432564.952432'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '1943',
+  2 => '0',
+  3 => '1',
+  4 => '1426432564.952432',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:16:00" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3264:[1,2,3]},{2424:[1,2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:16:02
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:15:08
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3264":[1,2,3]},{"2424":[1,2]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:15:08" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 4 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+  0 => 
+  array (
+    't' => '1',
+    'bid' => '2424',
+    'vid' => '1',
+  ),
+  1 => 
+  array (
+    't' => '1',
+    'bid' => '2424',
+    'vid' => '2',
+  ),
+  2 => 
+  array (
+    't' => '2',
+    'bid' => '2508',
+    'vid' => '1',
+  ),
+  3 => 
+  array (
+    't' => '2',
+    'bid' => '2508',
+    'vid' => '2',
+  ),
+  4 => 
+  array (
+    't' => '2',
+    'bid' => '3196',
+    'vid' => '1',
+  ),
+  5 => 
+  array (
+    't' => '2',
+    'bid' => '3196',
+    'vid' => '2',
+  ),
+  6 => 
+  array (
+    't' => '2',
+    'bid' => '3196',
+    'vid' => '3',
+  ),
+  7 => 
+  array (
+    't' => '2',
+    'bid' => '3196',
+    'vid' => '4',
+  ),
+  8 => 
+  array (
+    't' => '2',
+    'bid' => '3196',
+    'vid' => '5',
+  ),
+  9 => 
+  array (
+    't' => '2',
+    'bid' => '1943',
+    'vid' => '1',
+  ),
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3264:[1,2,3]},{2424:[1,2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:16:15
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:16:15
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3264":[1,2,3]},{"2424":[1,2]}]
+101.109.225.61 : send change is '1:1943:1:0:1426432624.049355'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '1943',
+  2 => '1',
+  3 => '0',
+  4 => '1426432624.049355',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:16:15" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432624.049355',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3264:[1,2,3]},{2424:[1,2]},{1943:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:17:01
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:17:01
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3264":[1,2,3]},{"2424":[1,2]},{"1943":[1]}]
+101.109.225.61 : send change is '2:1943:1:0:1426432625.664492'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '1943',
+  2 => '1',
+  3 => '0',
+  4 => '1426432625.664492',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:17:01" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432625.664492',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3264:[1,2,3]},{2424:[1,2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:17:03
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:17:03
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3264":[1,2,3]},{"2424":[1,2]}]
+101.109.225.61 : send change is '1:1943:1:0:1426432627.116586'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '1943',
+  2 => '1',
+  3 => '0',
+  4 => '1426432627.116586',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:17:03" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432627.116586',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3264:[1,2,3]},{2424:[1,2]},{1943:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:17:05
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:17:05
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3264":[1,2,3]},{"2424":[1,2]},{"1943":[1]}]
+101.109.225.61 : send change is '2:1943:1:0:1426432628.171278'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '1943',
+  2 => '1',
+  3 => '0',
+  4 => '1426432628.171278',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:17:05" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432628.171278',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3264:[1,2,3]},{2424:[1,2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:17:06
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:17:06
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3264":[1,2,3]},{"2424":[1,2]}]
+101.109.225.61 : send change is '1:1943:1:0:1426432628.923289'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '1943',
+  2 => '1',
+  3 => '0',
+  4 => '1426432628.923289',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:17:06" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432628.923289',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3264:[1,2,3]},{2424:[1,2]},{1943:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:17:06
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:17:06
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3264":[1,2,3]},{"2424":[1,2]},{"1943":[1]}]
+101.109.225.61 : send change is '2:1943:1:0:1426432629.572116'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '1943',
+  2 => '1',
+  3 => '0',
+  4 => '1426432629.572116',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:17:06" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432629.572116',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3264:[1,2,3]},{2424:[1,2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:17:07
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:17:07
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3264":[1,2,3]},{"2424":[1,2]}]
+101.109.225.61 : send change is '1:1943:1:0:1426432630.199098'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '1943',
+  2 => '1',
+  3 => '0',
+  4 => '1426432630.199098',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:17:07" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432630.199098',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3264:[1,2,3]},{2424:[1,2]},{1943:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:17:08
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:17:08
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3264":[1,2,3]},{"2424":[1,2]},{"1943":[1]}]
+101.109.225.61 : send change is '2:1943:1:0:1426432630.910602'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '1943',
+  2 => '1',
+  3 => '0',
+  4 => '1426432630.910602',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:17:08" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432630.910602',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3264:[1,2,3]},{2424:[1,2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:17:08
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:16:02
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3264":[1,2,3]},{"2424":[1,2]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:16:02" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 8 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432624',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432626',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432627',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432628',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432629',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432630',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432630',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432631',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+  0 => 
+  array (
+    't' => '2',
+    'bid' => '1943',
+    'vid' => '1',
+  ),
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3264:[1,2,3]},{2424:[1,2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:17:22
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:17:22
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3264":[1,2,3]},{"2424":[1,2]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:17:22" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{691:[1,2,3,4,5,6]},{3264:[1,2,3]},{2424:[1,2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:22:16
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:22:16
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"691":[1,2,3,4,5,6]},{"3264":[1,2,3]},{"2424":[1,2]}]
+101.109.225.61 : send change is '2:691:0:6:1426432944.101047'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '691',
+  2 => '0',
+  3 => '6',
+  4 => '1426432944.101047',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:22:16" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{3264:[1,2,3]},{2424:[1,2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:22:21
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:22:21
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"3264":[1,2,3]},{"2424":[1,2]}]
+101.109.225.61 : send change is '1:1943:0:1:1426432948.429599'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '1943',
+  2 => '0',
+  3 => '1',
+  4 => '1426432948.429599',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:22:21" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{3264:[1,2,3]},{2424:[1,2]},{1943:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:22:26
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:22:26
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"3264":[1,2,3]},{"2424":[1,2]},{"1943":[1]}]
+101.109.225.61 : send change is '1:3196:0:5:1426432951.498544'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '3196',
+  2 => '0',
+  3 => '5',
+  4 => '1426432951.498544',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:22:26" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{3264:[1,2,3]},{2424:[1,2]},{1943:[1]},{3196:[1,2,3,4,5]}]
+101.109.225.61 : return last sync is 2015-03-15 22:22:29
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:22:29
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"3264":[1,2,3]},{"2424":[1,2]},{"1943":[1]},{"3196":[1,2,3,4,5]}]
+101.109.225.61 : send change is '2:3196:3:0:1426432959.250886'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '3196',
+  2 => '3',
+  3 => '0',
+  4 => '1426432959.250886',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:22:29" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '3',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432959.250886',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{3264:[1,2,3]},{2424:[1,2]},{1943:[1]},{3196:[1,2,4,5]}]
+101.109.225.61 : return last sync is 2015-03-15 22:22:36
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:22:36
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"3264":[1,2,3]},{"2424":[1,2]},{"1943":[1]},{"3196":[1,2,4,5]}]
+101.109.225.61 : send change is '2:3196:4:0:1426432960.497208'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '3196',
+  2 => '4',
+  3 => '0',
+  4 => '1426432960.497208',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:22:36" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '4',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432960.497208',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{3264:[1,2,3]},{2424:[1,2]},{1943:[1]},{3196:[1,2,5]}]
+101.109.225.61 : return last sync is 2015-03-15 22:22:38
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:22:38
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"3264":[1,2,3]},{"2424":[1,2]},{"1943":[1]},{"3196":[1,2,5]}]
+101.109.225.61 : send change is '1:2508:2:0:1426432964.160938'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '2508',
+  2 => '2',
+  3 => '0',
+  4 => '1426432964.160938',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:22:38" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '2508',
+   'volumeid' => '2',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432964.160938',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{3264:[1,2,3]},{2424:[1,2]},{1943:[1]},{3196:[1,2,5]},{2508:[2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:22:41
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:22:41
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"3264":[1,2,3]},{"2424":[1,2]},{"1943":[1]},{"3196":[1,2,5]},{"2508":[2]}]
+101.109.225.61 : send change is '1:691:2:0:1426432965.969555'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '691',
+  2 => '2',
+  3 => '0',
+  4 => '1426432965.969555',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:22:41" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '2',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432965.969555',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{3264:[1,2,3]},{2424:[1,2]},{1943:[1]},{3196:[1,2,5]},{2508:[2]},{691:[2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:22:43
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:17:08
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"3264":[1,2,3]},{"2424":[1,2]},{"1943":[1]},{"3196":[1,2,5]},{"2508":[2]},{"691":[2]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:17:08" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 7 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '3',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432959',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '4',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432960',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '2508',
+   'volumeid' => '2',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432964',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '2',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432966',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+  0 => 
+  array (
+    't' => '1',
+    'bid' => '1943',
+    'vid' => '1',
+  ),
+  1 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '1',
+  ),
+  2 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '2',
+  ),
+  3 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '5',
+  ),
+  4 => 
+  array (
+    't' => '1',
+    'bid' => '2508',
+    'vid' => '2',
+  ),
+  5 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '2',
+  ),
+  6 => 
+  array (
+    't' => '2',
+    'bid' => '691',
+    'vid' => '1',
+  ),
+  7 => 
+  array (
+    't' => '2',
+    'bid' => '691',
+    'vid' => '3',
+  ),
+  8 => 
+  array (
+    't' => '2',
+    'bid' => '691',
+    'vid' => '4',
+  ),
+  9 => 
+  array (
+    't' => '2',
+    'bid' => '691',
+    'vid' => '5',
+  ),
+  10 => 
+  array (
+    't' => '2',
+    'bid' => '691',
+    'vid' => '6',
+  ),
+  11 => 
+  array (
+    't' => '2',
+    'bid' => '3196',
+    'vid' => '3',
+  ),
+  12 => 
+  array (
+    't' => '2',
+    'bid' => '3196',
+    'vid' => '4',
+  ),
+)
+101.109.225.61 : save data to db [{3264:[1,2,3]},{2424:[1,2]},{1943:[1]},{3196:[1,2,5]},{2508:[2]},{691:[2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:22:56
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:17:08
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"3264":[1,2,3]},{"2424":[1,2]},{"1943":[1]},{"3196":[1,2,5]},{"2508":[2]},{"691":[2]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:17:08" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 7 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '3',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432959',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '4',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432960',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '2508',
+   'volumeid' => '2',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432964',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '2',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432966',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+  0 => 
+  array (
+    't' => '1',
+    'bid' => '1943',
+    'vid' => '1',
+  ),
+  1 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '1',
+  ),
+  2 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '2',
+  ),
+  3 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '5',
+  ),
+  4 => 
+  array (
+    't' => '1',
+    'bid' => '2508',
+    'vid' => '2',
+  ),
+  5 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '2',
+  ),
+  6 => 
+  array (
+    't' => '2',
+    'bid' => '691',
+    'vid' => '1',
+  ),
+  7 => 
+  array (
+    't' => '2',
+    'bid' => '691',
+    'vid' => '3',
+  ),
+  8 => 
+  array (
+    't' => '2',
+    'bid' => '691',
+    'vid' => '4',
+  ),
+  9 => 
+  array (
+    't' => '2',
+    'bid' => '691',
+    'vid' => '5',
+  ),
+  10 => 
+  array (
+    't' => '2',
+    'bid' => '691',
+    'vid' => '6',
+  ),
+  11 => 
+  array (
+    't' => '2',
+    'bid' => '3196',
+    'vid' => '3',
+  ),
+  12 => 
+  array (
+    't' => '2',
+    'bid' => '3196',
+    'vid' => '4',
+  ),
+)
+101.109.225.61 : save data to db [{3264:[1,2,3]},{2424:[1,2]},{1943:[1]},{3196:[1,2,5]},{2508:[2]},{691:[2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:24:24
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:24:24
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"3264":[1,2,3]},{"2424":[1,2]},{"1943":[1]},{"3196":[1,2,5]},{"2508":[2]},{"691":[2]}]
+101.109.225.61 : send change is '2:1943:0:1:1426433074.283121'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '1943',
+  2 => '0',
+  3 => '1',
+  4 => '1426433074.283121',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:24:24" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{3264:[1,2,3]},{2424:[1,2]},{3196:[1,2,5]},{2508:[2]},{691:[2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:24:31
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:24:31
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"3264":[1,2,3]},{"2424":[1,2]},{"3196":[1,2,5]},{"2508":[2]},{"691":[2]}]
+101.109.225.61 : send change is '2:691:2:0:1426433076.695977'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '691',
+  2 => '2',
+  3 => '0',
+  4 => '1426433076.695977',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:24:31" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '691',
+   'volumeid' => '2',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426433076.695977',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{3264:[1,2,3]},{2424:[1,2]},{3196:[1,2,5]},{2508:[2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:24:34
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:24:34
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"3264":[1,2,3]},{"2424":[1,2]},{"3196":[1,2,5]},{"2508":[2]}]
+101.109.225.61 : send change is '2:3196:1:0:1426433080.581366'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '3196',
+  2 => '1',
+  3 => '0',
+  4 => '1426433080.581366',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:24:34" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426433080.581366',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{3264:[1,2,3]},{2424:[1,2]},{3196:[2,5]},{2508:[2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:24:38
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:24:38
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"3264":[1,2,3]},{"2424":[1,2]},{"3196":[2,5]},{"2508":[2]}]
+101.109.225.61 : send change is '2:3196:2:0:1426433081.281028'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '3196',
+  2 => '2',
+  3 => '0',
+  4 => '1426433081.281028',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:24:38" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '2',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426433081.281028',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{3264:[1,2,3]},{2424:[1,2]},{3196:[5]},{2508:[2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:24:39
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:24:39
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"3264":[1,2,3]},{"2424":[1,2]},{"3196":[5]},{"2508":[2]}]
+101.109.225.61 : send change is '2:3196:5:0:1426433082.007279'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '3196',
+  2 => '5',
+  3 => '0',
+  4 => '1426433082.007279',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:24:39" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '5',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426433082.007279',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{3264:[1,2,3]},{2424:[1,2]},{2508:[2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:24:39
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:24:39
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"3264":[1,2,3]},{"2424":[1,2]},{"2508":[2]}]
+101.109.225.61 : send change is '2:3264:0:3:1426433084.394329'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '3264',
+  2 => '0',
+  3 => '3',
+  4 => '1426433084.394329',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:24:39" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{2424:[1,2]},{2508:[2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:24:42
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:24:42
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"2424":[1,2]},{"2508":[2]}]
+101.109.225.61 : send change is '2:2508:2:0:1426433087.051715'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '2508',
+  2 => '2',
+  3 => '0',
+  4 => '1426433087.051715',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:24:42" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '2508',
+   'volumeid' => '2',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426433087.051715',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{2424:[1,2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:24:44
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:24:44
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"2424":[1,2]}]
+101.109.225.61 : send change is '2:2424:0:2:1426433092.946113'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '2424',
+  2 => '0',
+  3 => '2',
+  4 => '1426433092.946113',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:24:44" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db []
+101.109.225.61 : return last sync is 2015-03-15 22:24:53
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:24:53
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data []
+101.109.225.61 : send change is '1:2424:0:2:1426433096.471976'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '2424',
+  2 => '0',
+  3 => '2',
+  4 => '1426433096.471976',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:24:53" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{2424:[1,2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:24:54
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:24:54
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"2424":[1,2]}]
+101.109.225.61 : send change is '2:2424:0:2:1426433098.516466'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '2424',
+  2 => '0',
+  3 => '2',
+  4 => '1426433098.516466',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:24:54" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db []
+101.109.225.61 : return last sync is 2015-03-15 22:24:57
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:15:23
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data []
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:15:23" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 29 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432624',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432626',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432627',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432628',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432629',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432630',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432630',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '1943',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426432631',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '3',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432959',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '4',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432960',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '2508',
+   'volumeid' => '2',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432964',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '2',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426432966',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '691',
+   'volumeid' => '2',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426433077',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '2',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426433081',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426433081',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '5',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426433082',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '2508',
+   'volumeid' => '2',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426433087',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+  0 => 
+  array (
+    't' => '2',
+    'bid' => '2508',
+    'vid' => '1',
+  ),
+  1 => 
+  array (
+    't' => '2',
+    'bid' => '691',
+    'vid' => '1',
+  ),
+  2 => 
+  array (
+    't' => '2',
+    'bid' => '691',
+    'vid' => '3',
+  ),
+  3 => 
+  array (
+    't' => '2',
+    'bid' => '691',
+    'vid' => '4',
+  ),
+  4 => 
+  array (
+    't' => '2',
+    'bid' => '691',
+    'vid' => '5',
+  ),
+  5 => 
+  array (
+    't' => '2',
+    'bid' => '691',
+    'vid' => '6',
+  ),
+  6 => 
+  array (
+    't' => '2',
+    'bid' => '3196',
+    'vid' => '3',
+  ),
+  7 => 
+  array (
+    't' => '2',
+    'bid' => '3196',
+    'vid' => '4',
+  ),
+  8 => 
+  array (
+    't' => '2',
+    'bid' => '1943',
+    'vid' => '1',
+  ),
+  9 => 
+  array (
+    't' => '2',
+    'bid' => '691',
+    'vid' => '2',
+  ),
+  10 => 
+  array (
+    't' => '2',
+    'bid' => '3196',
+    'vid' => '2',
+  ),
+  11 => 
+  array (
+    't' => '2',
+    'bid' => '3196',
+    'vid' => '1',
+  ),
+  12 => 
+  array (
+    't' => '2',
+    'bid' => '3196',
+    'vid' => '5',
+  ),
+  13 => 
+  array (
+    't' => '2',
+    'bid' => '3264',
+    'vid' => '1',
+  ),
+  14 => 
+  array (
+    't' => '2',
+    'bid' => '3264',
+    'vid' => '2',
+  ),
+  15 => 
+  array (
+    't' => '2',
+    'bid' => '3264',
+    'vid' => '3',
+  ),
+  16 => 
+  array (
+    't' => '2',
+    'bid' => '2508',
+    'vid' => '2',
+  ),
+  17 => 
+  array (
+    't' => '2',
+    'bid' => '2424',
+    'vid' => '1',
+  ),
+  18 => 
+  array (
+    't' => '2',
+    'bid' => '2424',
+    'vid' => '2',
+  ),
+)
+101.109.225.61 : save data to db []
+101.109.225.61 : return last sync is 2015-03-15 22:25:09
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:22:43
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data []
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:22:43" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 10 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '691',
+   'volumeid' => '2',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426433077',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426433081',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '2',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426433081',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '5',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426433082',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '2508',
+   'volumeid' => '2',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426433087',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : return change is array (
+  0 => 
+  array (
+    't' => '2',
+    'bid' => '1943',
+    'vid' => '1',
+  ),
+  1 => 
+  array (
+    't' => '2',
+    'bid' => '691',
+    'vid' => '2',
+  ),
+  2 => 
+  array (
+    't' => '2',
+    'bid' => '3196',
+    'vid' => '1',
+  ),
+  3 => 
+  array (
+    't' => '2',
+    'bid' => '3196',
+    'vid' => '2',
+  ),
+  4 => 
+  array (
+    't' => '2',
+    'bid' => '3196',
+    'vid' => '5',
+  ),
+  5 => 
+  array (
+    't' => '2',
+    'bid' => '3264',
+    'vid' => '1',
+  ),
+  6 => 
+  array (
+    't' => '2',
+    'bid' => '3264',
+    'vid' => '2',
+  ),
+  7 => 
+  array (
+    't' => '2',
+    'bid' => '3264',
+    'vid' => '3',
+  ),
+  8 => 
+  array (
+    't' => '2',
+    'bid' => '2508',
+    'vid' => '2',
+  ),
+  9 => 
+  array (
+    't' => '2',
+    'bid' => '2424',
+    'vid' => '1',
+  ),
+  10 => 
+  array (
+    't' => '2',
+    'bid' => '2424',
+    'vid' => '2',
+  ),
+)
+101.109.225.61 : save data to db []
+101.109.225.61 : return last sync is 2015-03-15 22:25:34
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:25:34
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data []
+101.109.225.61 : send change is '1:1943:0:1:1426433147.473331'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '1943',
+  2 => '0',
+  3 => '1',
+  4 => '1426433147.473331',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:25:34" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:25:45
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:25:45
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"1943":[1]}]
+101.109.225.61 : send change is '1:3196:0:5:1426433149.879922'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '3196',
+  2 => '0',
+  3 => '5',
+  4 => '1426433149.879922',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:25:45" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,2,3,4,5]}]
+101.109.225.61 : return last sync is 2015-03-15 22:25:47
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:25:47
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,2,3,4,5]}]
+101.109.225.61 : send change is '1:2508:2:0:1426433153.021877'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '2508',
+  2 => '2',
+  3 => '0',
+  4 => '1426433153.021877',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:25:47" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '2508',
+   'volumeid' => '2',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426433153.021877',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,2,3,4,5]},{2508:[2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:25:50
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:25:50
+101.109.225.61 : request from device 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,2,3,4,5]},{"2508":[2]}]
+101.109.225.61 : send change is '2:3196:2:0:1426433158.097010'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '3196',
+  2 => '2',
+  3 => '0',
+  4 => '1426433158.097010',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="337b1ca08c30386aa24c096621498bd3" AND `updatetime`>="2015-03-15 22:25:50" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '2',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426433158.097010',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5]},{2508:[2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:25:55
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:24:57
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5]},{"2508":[2]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:24:57" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 4 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '2508',
+   'volumeid' => '2',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426433153',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '2',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426433158',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+  0 => 
+  array (
+    't' => '1',
+    'bid' => '1943',
+    'vid' => '1',
+  ),
+  1 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '1',
+  ),
+  2 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '3',
+  ),
+  3 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '4',
+  ),
+  4 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '5',
+  ),
+  5 => 
+  array (
+    't' => '1',
+    'bid' => '2508',
+    'vid' => '2',
+  ),
+  6 => 
+  array (
+    't' => '2',
+    'bid' => '3196',
+    'vid' => '2',
+  ),
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5]},{2508:[2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:26:10
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:26:10
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5]},{"2508":[2]}]
+101.109.225.61 : send change is '1:2508:1:0:1426433180.995148'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '2508',
+  2 => '1',
+  3 => '0',
+  4 => '1426433180.995148',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:26:10" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '2508',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426433180.995148',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:26:18
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:26:18
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5]},{"2508":[2,1]}]
+101.109.225.61 : send change is '1:3196:2:0:1426433183.282110'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '3196',
+  2 => '2',
+  3 => '0',
+  4 => '1426433183.282110',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:26:18" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '3196',
+   'volumeid' => '2',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426433183.282110',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:26:20
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:25:09
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:25:09" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 6 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '2508',
+   'volumeid' => '2',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426433153',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3196',
+   'volumeid' => '2',
+   'deviceid' => '337b1ca08c30386aa24c096621498bd3',
+   'volumenum' => '0',
+   'updatetime' => '1426433158',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '2508',
+   'volumeid' => '1',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426433181',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '3196',
+   'volumeid' => '2',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426433183',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+  0 => 
+  array (
+    't' => '1',
+    'bid' => '1943',
+    'vid' => '1',
+  ),
+  1 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '1',
+  ),
+  2 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '3',
+  ),
+  3 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '4',
+  ),
+  4 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '5',
+  ),
+  5 => 
+  array (
+    't' => '1',
+    'bid' => '2508',
+    'vid' => '2',
+  ),
+  6 => 
+  array (
+    't' => '1',
+    'bid' => '2508',
+    'vid' => '1',
+  ),
+  7 => 
+  array (
+    't' => '1',
+    'bid' => '3196',
+    'vid' => '2',
+  ),
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:26:32
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:26:32
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:26:32" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:28:25
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:28:25
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:28:25" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:04
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:04
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:04" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:07
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:07
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:07" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:10
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:10
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:10" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:13
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:13
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is '1:691:1:0:1426433957.700606'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '691',
+  2 => '1',
+  3 => '0',
+  4 => '1426433957.700606',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:13" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '1',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426433957.700606',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]},{691:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:15
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:15
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]},{"691":[1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:15" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]},{691:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:16
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:16
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]},{"691":[1]}]
+101.109.225.61 : send change is '2:691:1:0:1426433961.789258'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '691',
+  2 => '1',
+  3 => '0',
+  4 => '1426433961.789258',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:16" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '691',
+   'volumeid' => '1',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426433961.789258',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:19
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:19
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:19" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:21
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:21
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:21" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:22
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:22
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:22" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:25
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:25
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:25" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:28
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:28
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:28" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:31
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:31
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:31" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:34
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:34
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:34" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:37
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:37
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:37" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:40
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:40
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:40" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:43
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:43
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:43" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:46
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:46
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is '1:691:2:0:1426433990.078042'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '691',
+  2 => '2',
+  3 => '0',
+  4 => '1426433990.078042',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:46" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '2',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426433990.078042',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]},{691:[2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:47
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:47
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]},{"691":[2]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:47" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]},{691:[2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:49
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:49
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]},{"691":[2]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:49" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]},{691:[2]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:52
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:52
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]},{"691":[2]}]
+101.109.225.61 : send change is '1:691:1:0:1426433996.133361'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '691',
+  2 => '1',
+  3 => '0',
+  4 => '1426433996.133361',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:52" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '1',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426433996.133361',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]},{691:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:53
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:53
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]},{"691":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:53" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]},{691:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:55
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:55
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]},{"691":[2,1]}]
+101.109.225.61 : send change is '1:691:0:6:1426434000.886938'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '691',
+  2 => '0',
+  3 => '6',
+  4 => '1426434000.886938',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:55" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]},{691:[2,1,3,4,5,6]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:58
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:58
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]},{"691":[2,1,3,4,5,6]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:58" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]},{691:[2,1,3,4,5,6]}]
+101.109.225.61 : return last sync is 2015-03-15 22:39:58
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:39:58
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]},{"691":[2,1,3,4,5,6]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:39:58" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]},{691:[2,1,3,4,5,6]}]
+101.109.225.61 : return last sync is 2015-03-15 22:40:01
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:40:01
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]},{"691":[2,1,3,4,5,6]}]
+101.109.225.61 : send change is '2:691:0:6:1426434005.110104'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '691',
+  2 => '0',
+  3 => '6',
+  4 => '1426434005.110104',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:40:01" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:40:02
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:40:02
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:40:02" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:40:04
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:40:04
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:40:04" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:40:07
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:40:07
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:40:07" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:41:36
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:41:36
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:41:36" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:41:39
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:41:39
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:41:39" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:41:42
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:41:42
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]}]
+101.109.225.61 : send change is '1:691:1:0:1426434107.250260|1:691:2:0:1426434107.723465|1:691:3:0:1426434108.229146'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '691',
+  2 => '1',
+  3 => '0',
+  4 => '1426434107.250260',
+)
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '691',
+  2 => '2',
+  3 => '0',
+  4 => '1426434107.723465',
+)
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '691',
+  2 => '3',
+  3 => '0',
+  4 => '1426434108.229146',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:41:42" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '1',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426434107.250260',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '2',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426434107.723465',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '3',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426434108.229146',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]},{691:[1,2,3]}]
+101.109.225.61 : return last sync is 2015-03-15 22:41:45
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:41:45
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]},{"691":[1,2,3]}]
+101.109.225.61 : send change is '1:691:4:0:1426434108.750054|1:691:6:0:1426434110.646052|1:691:5:0:1426434111.111682'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '691',
+  2 => '4',
+  3 => '0',
+  4 => '1426434108.750054',
+)
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '691',
+  2 => '6',
+  3 => '0',
+  4 => '1426434110.646052',
+)
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '691',
+  2 => '5',
+  3 => '0',
+  4 => '1426434111.111682',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:41:45" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '4',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426434108.750054',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '6',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426434110.646052',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '5',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426434111.111682',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]},{691:[1,2,3,4,6,5]}]
+101.109.225.61 : return last sync is 2015-03-15 22:41:48
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:41:48
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]},{"691":[1,2,3,4,6,5]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:41:48" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]},{691:[1,2,3,4,6,5]}]
+101.109.225.61 : return last sync is 2015-03-15 22:41:51
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:26:20
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]},{"691":[1,2,3,4,6,5]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:26:20" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 12 rows
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '1',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426433958',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '691',
+   'volumeid' => '1',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426433962',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '2',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426433990',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '1',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426433996',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '1',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426434107',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '2',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426434108',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '3',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426434108',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '4',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426434109',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '5',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426434111',
+))
+101.109.225.61 : apply add ChangeActivity::__set_state(array(
+   'type' => 1,
+   'bookid' => '691',
+   'volumeid' => '6',
+   'deviceid' => '59e2537994fb20403f1a8c5cdc6ccdc1',
+   'volumenum' => '0',
+   'updatetime' => '1426434111',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+  0 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '1',
+  ),
+  1 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '2',
+  ),
+  2 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '3',
+  ),
+  3 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '4',
+  ),
+  4 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '5',
+  ),
+  5 => 
+  array (
+    't' => '1',
+    'bid' => '691',
+    'vid' => '6',
+  ),
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]},{691:[1,2,3,4,5,6]}]
+101.109.225.61 : return last sync is 2015-03-15 22:42:01
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:42:01
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]},{"691":[1,2,3,4,5,6]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:42:01" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]},{691:[1,2,3,4,5,6]}]
+101.109.225.61 : return last sync is 2015-03-15 22:42:04
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:42:04
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]},{"691":[1,2,3,4,5,6]}]
+101.109.225.61 : send change is '1:3264:0:3:1426434129.092949'
+101.109.225.61 : parse change array (
+  0 => '1',
+  1 => '3264',
+  2 => '0',
+  3 => '3',
+  4 => '1426434129.092949',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:42:04" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]},{691:[1,2,3,4,5,6]},{3264:[1,2,3]}]
+101.109.225.61 : return last sync is 2015-03-15 22:42:07
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:42:07
+101.109.225.61 : request from device c3413b971e56a04c323e9be0dcb2c5cf
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]},{"691":[1,2,3,4,5,6]},{"3264":[1,2,3]}]
+101.109.225.61 : send change is '2:3264:2:0:1426434130.929041|2:3264:3:0:1426434131.353140'
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '3264',
+  2 => '2',
+  3 => '0',
+  4 => '1426434130.929041',
+)
+101.109.225.61 : parse change array (
+  0 => '2',
+  1 => '3264',
+  2 => '3',
+  3 => '0',
+  4 => '1426434131.353140',
+)
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="c3413b971e56a04c323e9be0dcb2c5cf" AND `updatetime`>="2015-03-15 22:42:07" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3264',
+   'volumeid' => '2',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426434130.929041',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3264',
+   'volumeid' => '3',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426434131.353140',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]},{691:[1,2,3,4,5,6]},{3264:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:42:10
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:41:51
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]},{"691":[1,2,3,4,5,6]},{"3264":[1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:41:51" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 3 rows
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3264',
+   'volumeid' => '2',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426434131',
+))
+101.109.225.61 : apply remove ChangeActivity::__set_state(array(
+   'type' => 2,
+   'bookid' => '3264',
+   'volumeid' => '3',
+   'deviceid' => 'c3413b971e56a04c323e9be0dcb2c5cf',
+   'volumenum' => '0',
+   'updatetime' => '1426434131',
+))
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+  0 => 
+  array (
+    't' => '1',
+    'bid' => '3264',
+    'vid' => '1',
+  ),
+  1 => 
+  array (
+    't' => '2',
+    'bid' => '3264',
+    'vid' => '2',
+  ),
+  2 => 
+  array (
+    't' => '2',
+    'bid' => '3264',
+    'vid' => '3',
+  ),
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]},{691:[1,2,3,4,5,6]},{3264:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:42:22
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+101.109.225.61 : user last sync is 2015-03-15 22:42:22
+101.109.225.61 : request from device 59e2537994fb20403f1a8c5cdc6ccdc1
+101.109.225.61 : retrive user data [{"1943":[1]},{"3196":[1,3,4,5,2]},{"2508":[2,1]},{"691":[1,2,3,4,5,6]},{"3264":[1]}]
+101.109.225.61 : send change is ''
+101.109.225.61 : search change activity SELECT * FROM `change_activity` WHERE `user_id`=14 AND `device_id`!="59e2537994fb20403f1a8c5cdc6ccdc1" AND `updatetime`>="2015-03-15 22:42:22" ORDER BY `unixtime` ASC
+101.109.225.61 : select change activity 0 rows
+101.109.225.61 : merge change
+101.109.225.61 : insert data to change activity
+101.109.225.61 : oldest sync is from 337b1ca08c30386aa24c096621498bd3
+101.109.225.61 : return change is array (
+)
+101.109.225.61 : save data to db [{1943:[1]},{3196:[1,3,4,5,2]},{2508:[2,1]},{691:[1,2,3,4,5,6]},{3264:[1]}]
+101.109.225.61 : return last sync is 2015-03-15 22:42:25
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+125.25.110.53 : user last sync is 2015-03-18 18:44:13
+125.25.110.53 : request from device 68210d41de554303b81a83817762b2e4
+125.25.110.53 : retrive user data [{"1":[1,2,4,6]},{"7":[4,5,6,7,8,9]}]
+125.25.110.53 : send change is '1:1:5:0:10001|2:7:5:0:10002|1:11:3:0:10005'
+125.25.110.53 : parse change array (
+  0 => '1',
+  1 => '1',
+  2 => '5',
+  3 => '0',
+  4 => '10001',
+)
+125.25.110.53 : parse change array (
+  0 => '2',
+  1 => '7',
+  2 => '5',
+  3 => '0',
+  4 => '10002',
+)
+125.25.110.53 : parse change array (
+  0 => '1',
+  1 => '11',
+  2 => '3',
+  3 => '0',
+  4 => '10005',
+)
+125.25.110.53 : book set log array (
+  1 => 
+  array (
+    1 => 1,
+    2 => 1,
+    4 => 1,
+    6 => 1,
+  ),
+  7 => 
+  array (
+    4 => 1,
+    5 => 1,
+    6 => 1,
+    7 => 1,
+    8 => 1,
+    9 => 1,
+  ),
+)
+125.25.110.53 : book set log array (
+  1 => 
+  array (
+    1 => 1,
+    2 => 1,
+    4 => 1,
+    6 => 1,
+    5 => 1,
+  ),
+  7 => 
+  array (
+    4 => 1,
+    5 => 1,
+    6 => 1,
+    7 => 1,
+    8 => 1,
+    9 => 1,
+  ),
+)
+125.25.110.53 : book set log array (
+  1 => 
+  array (
+    1 => 1,
+    2 => 1,
+    4 => 1,
+    6 => 1,
+    5 => 1,
+  ),
+  7 => 
+  array (
+    4 => 1,
+    6 => 1,
+    7 => 1,
+    8 => 1,
+    9 => 1,
+  ),
+)
+125.25.110.53 : save data to db [{1:[1,2,4,6,5]},{7:[4,6,7,8,9]},{11:[3]}]
+125.25.110.53 : return last sync is 2015-03-18 18:44:13
+=======================================================
+------------------- SYNC DATA SERVICE -----------------
+=======================================================
+125.25.110.53 : user last sync is 2015-03-18 18:44:13
+125.25.110.53 : request from device 68210d41de554303b81a83817762b2e4
+125.25.110.53 : retrive user data [{"1":[1,2,4,6,5]},{"7":[4,6,7,8,9]},{"11":[3]}]
+125.25.110.53 : send change is '2:11:3:0:10008|1:15:0:17:10009|2:15:2:0:10010|2:15:1:0:10013'
+125.25.110.53 : parse change array (
+  0 => '2',
+  1 => '11',
+  2 => '3',
+  3 => '0',
+  4 => '10008',
+)
+125.25.110.53 : parse change array (
+  0 => '1',
+  1 => '15',
+  2 => '0',
+  3 => '17',
+  4 => '10009',
+)
+125.25.110.53 : parse change array (
+  0 => '2',
+  1 => '15',
+  2 => '2',
+  3 => '0',
+  4 => '10010',
+)
+125.25.110.53 : parse change array (
+  0 => '2',
+  1 => '15',
+  2 => '1',
+  3 => '0',
+  4 => '10013',
+)
+125.25.110.53 : book set log array (
+  1 => 
+  array (
+    1 => 1,
+    2 => 1,
+    4 => 1,
+    6 => 1,
+    5 => 1,
+  ),
+  7 => 
+  array (
+    4 => 1,
+    6 => 1,
+    7 => 1,
+    8 => 1,
+    9 => 1,
+  ),
+  11 => 
+  array (
+    3 => 1,
+  ),
+)
+125.25.110.53 : book set log array (
+  1 => 
+  array (
+    1 => 1,
+    2 => 1,
+    4 => 1,
+    6 => 1,
+    5 => 1,
+  ),
+  7 => 
+  array (
+    4 => 1,
+    6 => 1,
+    7 => 1,
+    8 => 1,
+    9 => 1,
+  ),
+  11 => 
+  array (
+  ),
+)
+125.25.110.53 : book set log array (
+  1 => 
+  array (
+    1 => 1,
+    2 => 1,
+    4 => 1,
+    6 => 1,
+    5 => 1,
+  ),
+  7 => 
+  array (
+    4 => 1,
+    6 => 1,
+    7 => 1,
+    8 => 1,
+    9 => 1,
+  ),
+  11 => 
+  array (
+  ),
+  15 => 
+  array (
+    1 => 1,
+    2 => 1,
+    3 => 1,
+    4 => 1,
+    5 => 1,
+    6 => 1,
+    7 => 1,
+    8 => 1,
+    9 => 1,
+    10 => 1,
+    11 => 1,
+    12 => 1,
+    13 => 1,
+    14 => 1,
+    15 => 1,
+    16 => 1,
+    17 => 1,
+  ),
+)
+125.25.110.53 : book set log array (
+  1 => 
+  array (
+    1 => 1,
+    2 => 1,
+    4 => 1,
+    6 => 1,
+    5 => 1,
+  ),
+  7 => 
+  array (
+    4 => 1,
+    6 => 1,
+    7 => 1,
+    8 => 1,
+    9 => 1,
+  ),
+  11 => 
+  array (
+  ),
+  15 => 
+  array (
+    1 => 1,
+    3 => 1,
+    4 => 1,
+    5 => 1,
+    6 => 1,
+    7 => 1,
+    8 => 1,
+    9 => 1,
+    10 => 1,
+    11 => 1,
+    12 => 1,
+    13 => 1,
+    14 => 1,
+    15 => 1,
+    16 => 1,
+    17 => 1,
+  ),
+)
+125.25.110.53 : save data to db [{1:[1,2,4,6,5]},{7:[4,6,7,8,9]},{15:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]}]
+125.25.110.53 : return last sync is 2015-03-18 18:44:13
+=======================================================
+------------------ MERGE DATA SERVICE -----------------
+=======================================================
+user push json is array (
+  0 => 
+  array (
+    1 => 
+    array (
+      0 => 1,
+      1 => 2,
+      2 => 4,
+    ),
+  ),
+  1 => 
+  array (
+    7 => 
+    array (
+      0 => 4,
+      1 => 6,
+    ),
+  ),
+  2 => 
+  array (
+    3866 => 
+    array (
+      0 => 2,
+    ),
+  ),
+)
+user db json is array (
+  0 => 
+  array (
+    1 => 
+    array (
+      0 => 1,
+      1 => 3,
+    ),
+  ),
+  1 => 
+  array (
+    3866 => 
+    array (
+      0 => 10,
+    ),
+  ),
+)
+service return is array (
+  0 => 
+  array (
+    'bid' => 1,
+    'vol' => 
+    array (
+      0 => '1',
+      1 => '3',
+    ),
+  ),
+  1 => 
+  array (
+    'bid' => 3866,
+    'vol' => 
+    array (
+      0 => '10',
+    ),
+  ),
+)
+merged data is '[{1:[1,3,2,4]},{3866:[10,2]},{7:[4,6]}]'
